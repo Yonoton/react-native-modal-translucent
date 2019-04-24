@@ -6,7 +6,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Build;
-import androidx.core.view.ViewCompat;
+import android.support.v4.view.ViewCompat;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowInsets;
@@ -71,7 +71,7 @@ public class TranslucentModalHostView extends ReactModalHostView {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(color);
-        }
+        } 
     }
 
     public static void setStatusBarStyle(Window window, boolean dark) {
